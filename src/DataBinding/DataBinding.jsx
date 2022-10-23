@@ -1,24 +1,31 @@
 import React, { Component } from 'react'
-
+//Cách viết khá giống việc nêu biến hoặc hàm
 export default class DataBinding extends Component {
+
+    product = {
+        id: 1,
+        name: 'Product 1',
+        price: 1000,
+        image: 'https://i.pravatar.cc'
+    }
 
     tong2so = (a, b) => {
         //Dữ liệu return ko thể ra object hoặc array
         return a + b;
     }
 
-    renderProduct() {//Lưu ý trong return ko xuống dòng
+    renderProduct = () => {//Lưu ý trong return ko xuống dòng
         return <div className='card'>
-            <img src="https://picsum.photos/200/200" alt="" />
+            <img src={this.product.image} />
             <div className="card-body">
-                <h3>Product Name</h3>
-                <p>Price</p>
+                <h3>{this.product.name}</h3>
+                <p>{this.product.price}</p>
                 <button className="btn btn-dark">Add to cart</button>
             </div>
         </div>
     }
 
-    render() {//Phần biến viết ở đây
+    render() {
         let title = 'CyberSoft';
         return (
             <div className='container'>
@@ -28,7 +35,6 @@ export default class DataBinding extends Component {
                     {this.renderProduct()}
                 </div>
             </div>
-
         )
     }
 }
