@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from './components/Header';
-import Product from './components/Product';
 import BaitapDemo from './components/BaitapHomeLayout/BaitapDemo';
 import DataBinding from './DataBinding/DataBinding';
-
+import DemoState from './DemoState/DemoState';
+import HandleEvent from './HandleEvent/HandleEvent';
+import './assets/css/style.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  // <BaitapDemo />
-  <DataBinding />
+  <div>
+    {/*  <BaitapDemo />
+   <DataBinding />
+  <HandleEvent /> */}
+    <DemoState />
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
