@@ -4,7 +4,7 @@ export default class BaitapState extends Component {
 
     state = {
         fs: 20,
-        img: ''//Thêm link
+        // img: ''//Thêm link
     }
 
     render() {
@@ -24,17 +24,17 @@ export default class BaitapState extends Component {
                         })
                     }}>-</button>
                     <hr />
-                    <div className="card w-25">
+                    {/* <div className="card w-25">
                         <img src={this.state.img} alt="" />
                         <button className='btn btn-successs' onClick={() => {
                             let randomNumber = Math.floor(Math.random() = 100);
                             let newImg = 'https://i.pravatar.cc?u=?' + randomNumber;
                             this.setState({
-                                img: newImg;
+                                // img: newImg;
                             })
 
                         }}>Change</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )
