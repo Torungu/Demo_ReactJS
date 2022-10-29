@@ -3,7 +3,7 @@ import BaitapState from '../BaitapState/BaitapState';
 import style from './DemoState.module.css'
 export default class DemoState extends Component {
 
-    //LƯU Ý KHÔNG THỂ CALL RENDER
+    //LƯU Ý KHÔNG THỂ CALL RENDER()
     username = "Trung";
     // logIn = false;
 
