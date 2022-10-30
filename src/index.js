@@ -9,19 +9,26 @@ import RenderList from './RenderList/RenderList';
 import RenderFilm from './RenderList/RenderFilm';
 import DemoProps from './Props/DemoProps/DemoProps';
 import ShoesApp from './Props/ShoesApp/ShoesApp';
+import BaitapState from './DemoState/BaiTapXemChiTiet/BaiTapXemChiTiet';
+import BaiTapXemChiTiet from './DemoState/BaiTapXemChiTiet/BaiTapXemChiTiet';
+import CarStore from './Props/CarStore/CarStore';
+import DemoChildren from './Props/DemoChildren/DemoChildren';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div>
-    {/* <BaitapDemo />
-    <DataBinding />
-    <HandleEvent />
-    <DemoState />
-    <RenderList />
-    <RenderFilm />
-    <DemoProps /> */}
-    <ShoesApp />
+    {/* <BaitapDemo /> */}
+    {/* <DataBinding /> */}
+    {/* <HandleEvent /> */}
+    {/* <DemoState /> */}
+    {/* <RenderList /> */}
+    {/* <RenderFilm /> */}
+    {/* <DemoProps /> */}
+    {/* <ShoesApp /> */}
+    {/* <BaiTapXemChiTiet /> */}
+    <CarStore />
+    {/* <DemoChildren /> */}
   </div>
 );
 

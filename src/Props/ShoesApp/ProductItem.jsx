@@ -12,7 +12,8 @@ export default class ProductItem extends Component {
                     <p>{description}</p>
                     <p>{price} $</p>
                 </div>
-            </div>
+                <button className="btn btn-dark">Add to cart <i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+            </div >
         )
     }
 }

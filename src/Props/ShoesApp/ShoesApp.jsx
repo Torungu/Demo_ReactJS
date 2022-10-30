@@ -123,7 +123,7 @@ const data = [{
 export default class ShoesApp extends Component {
     renderShoes = () => {
         return data.map((shoe, index) => {
-            return <div className='col-4 mt-2' key={index}>
+            return <div className='col-3 mt-2' key={index}>
                 <ProductItem prod={shoe} />
             </div>
         })
