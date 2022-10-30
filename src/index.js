@@ -7,6 +7,9 @@ import HandleEvent from './HandleEvent/HandleEvent';
 import './assets/css/style.css'
 import RenderList from './RenderList/RenderList';
 import RenderFilm from './RenderList/RenderFilm';
+import DemoProps from './Props/DemoProps/DemoProps';
+import ShoesApp from './Props/ShoesApp/ShoesApp';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -14,9 +17,11 @@ root.render(
     {/* <BaitapDemo />
     <DataBinding />
     <HandleEvent />
-    <DemoState /> 
-    <RenderList /> */}
+    <DemoState />
+    <RenderList />
     <RenderFilm />
+    <DemoProps /> */}
+    <ShoesApp />
   </div>
 );
 
